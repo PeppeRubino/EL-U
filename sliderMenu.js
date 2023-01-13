@@ -1,47 +1,29 @@
-const bg = document.querySelectorAll(".bg"),
-      current = 0;
+var vImg = 3;
+var current = 1;
 
 const arrowSx = document.getElementById("arrow"),
       arrowDx = document.getElementById("arrow2");
 
 
-//Clear images//
-function reset(){
-    for ( i=0 ; i< bg1.length; i++){
-    bg.lenght[0].style.display = 'none';
+ arrowDx.onclick = function slideRight(){
+    current++;
+    if(current > vImg){
+        current = 1;
+    };
+    for(var i= vImg; i>0; i--){
+        document.querySelector("#bg img:nth-child(" + i +")").style.display = "none";
     }
-}
-
-//init - First Image//
-function startSlide(){
-    reset();
-    bg[0]
-}
-
-startSlide();
+    document.querySelector("#bg img:nth-child(" + current +")").style.display = "block";
+ };
 
 
-
-//show prev
-function slideleft(){
-    reset();
-    bg[current].style.display = 'none';
-    bg[current - 1].classList.add("bg");
-}
-
-
-//show next
-function slideRight(){
-    bg[current].style.display = 'none';
-    bg[current + 1].classList.add("bg");
-
-}
-
-//Left arrow click
-
-arrowSx.onclick = function slideLeft(){
-    
-}
-
-
-//right arrow click
+ arrowSx.onclick = function slideLeft(){
+    current--;
+    if(current == 0){
+        current = 3;
+    };
+    for(var i= vImg; i>0; i--){
+        document.querySelector("#bg img:nth-child(" + i +")").style.display = "none";
+    }
+    document.querySelector("#bg img:nth-child(" + current +")").style.display = "block";
+ };
