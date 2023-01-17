@@ -1,10 +1,17 @@
+/* General */
+
 body{
     margin: 0%;
     background-color: rgb(0, 0, 0);
 }
 
+.list-unstyled{
+    margin-bottom: 0;
+}
 
-
+.list-inline li{
+    display:inline;
+}
 
 /*Header*/
 
@@ -326,6 +333,7 @@ body{
 
 }
 
+
 /* 2 Cintura - Main */
 
 #div-belt2{
@@ -347,9 +355,7 @@ body{
 }
 
 
-
 /* 3 Cintura - Main */
-
 
 #div-belt3{
     display: flex;
@@ -364,3 +370,105 @@ body{
 .belt3{
     width: 10vw;
 }
+
+
+/* Footer generic */
+
+.footer{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-inside{
+    position: relative;
+    z-index: 1;
+    background-color: #252423;
+    padding: 60px 20px 40px;
+    color: #8a8887;
+    text-align: center;
+}
+
+/* Footer - icon logo */
+
+.footer-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+}
+
+.footer_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    max-width: 1440px;
+    margin: 0 auto;  
+}
+
+.footer_col {
+    box-sizing: border-box;
+}
+
+.footer_col-inside {
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo {
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.footer_icon {
+    width: 38px;   
+    height: auto;
+    line-height: 40px;
+}
+
+#footerLogoID {
+    width: 38px;
+    height: 40px;
+    vertical-align: top;
+}
+
+/* Footer - Barra di navigazione */
+
+.footer_navigation_bar {
+    display: inline-block;
+    padding-top: 0;
+    text-align: left;
+}
+
+.footer_navigation_bar a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #8a8887;
+    letter-spacing: .08em;
+  }
+
+
+/* Footer - Separatore */
+
+.footer_separator {
+    height: 2px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color:#8a8887;
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-size: 420px 2px;
+}
+
+
+
+
+
+
