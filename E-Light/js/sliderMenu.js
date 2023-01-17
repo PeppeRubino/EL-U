@@ -1,11 +1,15 @@
+
+
+// Slider of imgs
+
 var vImg = 3;
 var current = 1;
 
-const arrowSx = document.getElementById("arrow-l"),
-      arrowDx = document.getElementById("arrow-r");
+const arrowL = document.getElementById("arrow-l"),
+      arrowR = document.getElementById("arrow-r");
 
 
- arrowDx.onclick = function slideRight(){
+ arrowR.onclick = function slideRight(){
     current++;
     if(current > vImg){
         current = 1;
@@ -17,7 +21,7 @@ const arrowSx = document.getElementById("arrow-l"),
  };
 
 
- arrowSx.onclick = function slideLeft(){
+ arrowL.onclick = function slideLeft(){
     current--;
     if(current == 0){
         current = 3;
@@ -27,3 +31,7 @@ const arrowSx = document.getElementById("arrow-l"),
     }
     document.querySelector("#bg-slides img:nth-child(" + current +")").style.display = "block";
  };
+
+
+
+ 

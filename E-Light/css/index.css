@@ -119,6 +119,10 @@ body{
     z-index: 0;
 }
 
+#donation{
+    background-color: rgba(255, 217, 0, 0.418);
+}
+
 /* Arrows - Main*/
 
 #div-arrows{
@@ -177,8 +181,8 @@ body{
 
 
 #main-container-I{
-    background-image: url('/E-Light/img/bg/bgCity2.png');
-    background-size: 100%;
+    background-image: url('/E-Light/img/bg/bgIndex/bgMain1-3.png');
+    background-size: 105%;
     background-position: bottom;
     background-repeat:repeat;
     display:block;
@@ -198,7 +202,8 @@ body{
 
 
 #bg-slides{
-    display: block;
+    display: flex;
+    justify-content: right;
     width: 90vh;
     height:80vh;
     border-radius: 5%;
@@ -220,10 +225,11 @@ body{
     height:80vh;
     border-radius: 5%;
 }
+
 /* 2 zone - Main */
 
 #main-container-II{
-    background-image: url('/E-Light/img/bg/bgMain2.png');
+    background-image: url('/E-Light/img/bg/bgIndex/bgMain2-2.png');
     background-size: 100%;
     background-position: center;
     display: flex;
@@ -235,8 +241,8 @@ body{
 
 
 #div-bg2{
-    width: 50%;
-    height:70vh;
+    width: 29%;
+    height:55vh;
     display: block;
     background-color: rgba(255, 255, 255, 0.733);
     border-bottom-left-radius: 10%;
@@ -252,6 +258,8 @@ body{
     height: 40%;
     display: flex;
     opacity: 1.0;
+    margin-top: 0%;
+    margin-left: 0%;
     
 
 }
@@ -259,7 +267,7 @@ body{
 
 
 #eye-l {
-    background-image: url('/E-Light/img/bg/eyeCrow.png') ;
+    background-image: url('/E-Light/img/bg/bannerIndex/eyeCrow.png') ;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -271,7 +279,7 @@ body{
 
 
 #eye-r{
-    background-image: url('/E-Light/img/bg/eyeOwl.png') ;
+    background-image: url('/E-Light/img/bg/bannerIndex/eyeOwl.png') ;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -284,12 +292,14 @@ body{
     text-align: center;
     padding: 4%;
     font-family: 'Prompt', sans-serif;
+    font-size: x-large;
 }
 
 #text-2{
     text-align: end;
     padding: 5%;
     font-family: 'Prompt', sans-serif;
+    font-size: small;
 }
 
 
