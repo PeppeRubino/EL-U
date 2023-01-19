@@ -114,7 +114,8 @@ body {
 /*foto background top*/
 
  #Main-1-Container{ 
-    background-color: red;
+    background-image: url("/E-Light/img/bg/bgCharacters/bgMain1-1.png");
+    background-size: 100%;
     display: block;
     background-repeat: no-repeat;
     width: 100%;
