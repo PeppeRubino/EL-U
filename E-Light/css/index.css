@@ -253,6 +253,28 @@ body{
     align-items: center;
 }
 
+#title-1{
+    width: 70%;
+    font-family: 'Syncopate', sans-serif;
+    font-size: normal;
+}
+
+#text-2{
+    text-align: center;
+    padding: 5%;
+    font-family: 'Syncopate', sans-serif;
+    font-size: normal;
+}
+
+#text-2 li{
+    text-align: left;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
 
 /* 2 ZONE - Main - Ticket 1 */
 
@@ -283,7 +305,7 @@ body{
 
 
 #ticket-I-elements:hover{
-background: rgba(255, 255, 255, 0.84);
+background: white;
 color: rgb(0, 0, 0);
 }
 
@@ -332,42 +354,8 @@ color: rgb(0, 0, 0);
     border-radius: 5%;
 }
 
-#title-1{
-    width: 70%;
-}
 
-
-
-/* 2 Cintura - Main */
-=======
-#title-1{
-    font-family: 'Syncopate', sans-serif;
-    font-size: normal;
-}
-
-
-#text-2{
-    text-align: center;
-    padding: 5%;
-    font-family: 'Syncopate', sans-serif;
-    font-size: normal;
-}
-
-#text-2 li{
-    text-align: left;
-}
-
-a{
-    display: flex;
-    justify-content: center;
-}
-
-#instagram-logo{
-    width: 5em;
-    height: 5em;
-}
-
-/* 2 ZONE - Main - Ticket 3 */
+/* 2 ZONE - Main - Ticket 2 */
 
 #ticket-II{
     width: 29%;
@@ -384,6 +372,16 @@ a{
     background: rgba(255, 255, 255);
     color: rgba(0, 0, 0, 0.76);
 }
+
+
+/* 2 ZONE - Main - Ticket 3 */
+
+
+#instagram-logo{
+    width: 5em;
+    height: 5em;
+}
+
 
 
 
@@ -493,7 +491,7 @@ a{
 
 
 
-=======
+
 
 #div-eyes{
     background-size: 100%;
