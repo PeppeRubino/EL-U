@@ -1,0 +1,496 @@
+/* General */
+
+body{
+    margin: 0%;
+    background-color: rgb(0, 0, 0);
+}
+
+.list-unstyled{
+    margin-bottom: 0;
+}
+
+.list-inline li{
+    display:inline;
+}
+
+#donation{
+    background-color: rgba(255, 217, 0, 0.418);
+}
+
+
+/* All Main */
+#allmain{
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
+.hidden{
+    background:rgb(81, 255, 0);
+    background-repeat:   no-repeat;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 2s;
+}
+
+.show{
+    transform: translateY(0px);
+    filter: blur(0px);
+    display: block;
+    opacity: 1;
+}
+
+
+
+/*************************************************Main I************************************************************************/
+
+
+#main-container-I{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-writesection-container{
+    background:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: block;
+    overflow: hidden;
+    border-right: #252423 solid 1px;
+    border-left: #252423 solid 1px;
+}
+
+#presentation-wrap{
+    display: block;
+    margin: 0 auto;
+    width: 70vh;
+    height: 100vh;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 3em;
+    overflow: hidden;
+    position: relative;
+    margin: 1%;
+}
+
+.scroll-text{
+    text-align: justify;
+    position: relative;
+    width: 60vh;
+    margin-top:70%;
+    animation: scroll-text 70s linear infinite;
+}
+
+.scroll-text h2, .scroll-text h3{
+    text-align: center;
+    color: red;
+    font-size: 0.5em;
+}
+
+@keyframes scroll-text{
+    from {top:0;}
+    to {top:0;}
+}
+
+
+/*Slider*/
+#div-bg1{
+    width: 50vh;
+    height: 50vh;
+   
+}
+
+
+
+#bg-slides{
+    width: 50vh;
+    height:50vh;
+    border-radius: 5%;
+    
+}
+
+#bg-slides img{
+    display: none;
+    width: 50vh;
+    height:50vh;
+    border-radius: 5%;
+    
+
+}
+
+#bg-slides img:nth-child(1){
+    display: block;
+    width: 50vh;
+    height:50vh;
+    border-radius: 5%;
+}
+
+/* 2 ZONE - Arrow - Main */
+
+#div-arrows{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 120%;
+    top: 30vh;
+    right: 10%;
+
+
+}
+#arrow-l {
+    background-color: #28282800;
+	width: 6vh;
+	height: 6vh;
+	transform: rotate(-45deg);
+    border-left: 0.8vmin solid rgb(255, 0, 0);
+    border-top: 0.8vmin solid rgb(128, 21, 21);
+    opacity: 0.5;
+
+}
+
+#arrow-r {
+    background-color: #28282800;
+	width: 6vh;
+	height: 6vh;
+	transform: rotate(-45deg);
+    border-right: 0.8vmin solid rgb(255, 0, 0);
+    border-bottom: 0.8vmin solid rgb(128, 21, 21);
+    opacity: 0.5;
+}
+
+#arrow-l:hover {
+    border-left: 0.6vmin solid white;
+    border-top: 0.8vmin solid rgb(255, 0, 0);
+    opacity: 1;
+}
+
+#arrow-r:hover {
+    border-right: 0.8vmin solid white;
+    border-bottom: 0.6vmin solid rgb(255, 0, 0);
+    opacity: 1;
+}
+
+#arrow-l:active {
+    border-left: 0.6vmin solid rgb(128, 21, 21);
+    border-top: 0.6vmin solid rgb(255, 0, 0);
+}
+
+#arrow-r:active {
+    border-right: 0.6vmin solid rgb(255, 0, 0);
+    border-bottom: 0.6vmin solid rgb(128, 21, 21);
+}
+
+
+/*************************************************Main II************************************************************************/
+
+#main-container-II{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height:100vh;
+}
+
+#div-tickets{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#div-tickets hr{
+    background: black 100%;
+}
+
+#title-1{
+    width: 70%;
+    font-family: 'Syncopate', sans-serif;
+    font-size: normal;
+}
+
+#text-2{
+    text-align: center;
+    padding: 5%;
+    font-family: 'Syncopate', sans-serif;
+    font-size: 2vh;
+}
+
+#text-2 li{
+    text-align: left;
+}
+
+
+/* 1 ZONE - Main - Ticket I */
+
+#ticket-I{
+    width: 30%;
+    height:45vh;
+    display: block;
+    animation: fade-in 2s forwards;
+    animation-timing-function: cubic-bezier(0.105, 0.64, 0.44, 1)
+}
+
+
+#ticket-I img{
+
+    width: 15vh;
+    height: 13.5vh;
+    
+
+}
+
+#ticket-I-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    height: 30%;
+    width: 100%;
+
+}
+
+
+#ticket-I-elements:hover{
+background: white;
+color: rgb(0, 0, 0);
+}
+
+
+#ticket-I-elements a{
+    text-decoration: none;
+    color: red;
+
+}
+
+#ticket-I-elements a:hover{
+    color: white;
+    background-color: red;
+}
+
+
+
+
+/* 1 ZONE - Main - Ticket II */
+
+#ticket-II{
+    width: 50vh;
+    display: block;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 10%;
+    z-index: 2;
+}
+
+
+#div-eyes{
+    background-size: 100%;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    margin-top: 0%;
+    margin-left: 0%;
+    
+
+}
+
+
+
+#eye-l {
+    background-image: url('/E-Light/img/bg/bannerIndex/eyeCrow.png') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+
+#eye-r{
+    background-image: url('/E-Light/img/bg/bannerIndex/eyeOwl.png') ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+
+/* 1 ZONE - Main - Ticket II - Registration */
+
+#div-II{
+    display: block;
+    width: 100%;
+    font-family: 'Syncopate', sans-serif;
+}
+
+
+
+input{
+    display: block;
+    width: 100%;
+    height: 2em;
+    border: none;
+    margin-bottom: 3%;
+    background: white;
+    margin-top: 3%;
+    font-family: 'Syncopate', sans-serif;
+}
+
+#submit{
+    background: greenyellow;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: 'Syncopate', sans-serif;
+}
+
+form{
+    text-align: center;
+    margin: 10%;
+}
+
+
+form button {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+    margin-bottom: 5%;
+    font-size: small;
+    background: white;
+    font-family: 'Syncopate', sans-serif;
+}
+
+form button img{
+    width: 2em;
+}
+
+form h3{
+    display: flex;
+    color: greenyellow;
+}
+
+form a {
+    font-size: small;
+    text-decoration: none;
+    color: greenyellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer generic */
+
+.footer{
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-inside{
+    position: relative;
+    z-index: 1;
+    background-color: #252423;
+    padding: 60px 20px 40px;
+    color: #8a8887;
+    text-align: center;
+}
+
+/* Footer - icon logo */
+
+.footer-center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+}
+
+.footer_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    max-width: 1440px;
+    margin: 0 auto;  
+}
+
+.footer_col {
+    box-sizing: border-box;
+}
+
+.footer_col-inside {
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo {
+    padding-right: 20px;
+    display: inline-block;
+}
+
+.footer_icon {
+    width: 38px;   
+    height: auto;
+    line-height: 40px;
+}
+
+#footerLogoID {
+    width: 38px;
+    height: 40px;
+    vertical-align: top;
+}
+
+/* Footer - Barra di navigazione */
+
+.footer_navigation_bar {
+    display: inline-block;
+    padding-top: 0;
+    text-align: left;
+}
+
+.footer_navigation_bar a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #8a8887;
+    letter-spacing: .08em;
+  }
+
+
+/* Footer - Separatore */
+
+.footer_separator {
+    height: 2px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color:#8a8887;
+    background-repeat: repeat-x;
+    background-position: 50% 50%;
+    background-size: 420px 2px;
+}
+
+
+
+
+
+
+
+
