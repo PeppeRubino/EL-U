@@ -1,17 +1,14 @@
 const menu = document.getElementById("hamburger-menu"),
-      menuOpen  = document.getElementById("header-open"),
-      circle  = document.getElementById("circle");
+      menuOpen  = document.getElementById("header-open");
 
-/* Function for HamburgerMenù */
+/* Function for Hamburger Menù */
 
 menu.onclick = function openMenu(){
-    if (circle.style.border == "inset") {
-    menuOpen.style.display = "block"
-    circle.style.border = "outset";
+    if (menuOpen.style.display == "none") {
+    menuOpen.style.display = "block";
 }
 else {
-    menuOpen.style.display = "none"
-    circle.style.border = "inset";
+    menuOpen.style.display = "none";
 }};
 
 

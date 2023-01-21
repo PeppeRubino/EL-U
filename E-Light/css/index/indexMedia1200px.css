@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1200px){
+
+    
+    #ticket-II{
+        width: 40vh;
+    
+    }
+
+    #header{
+        height: 10vh;
+    }
+
+    #div-section-menu{
+        height: 5vh;
+    }
+
+    #ticket-I{
+        width: 20%;
+    }
+
+    #ticket-I img{
+        display: none;
+    }
+
+
+    #main-container-I{
+        height: 100vh;
+        background-size: 200%;
+    }
+
+    #main-container-II{
+        height: 100vh;
+        background-size: 200%;
+    }
+
+    #bg-slides{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 50vh;
+        height:50vh;
+        border-radius: 5%;
+        
+    }
+
+
+}

@@ -10,24 +10,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Mono&family=Syncopate&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/1560e31e4a.js" crossorigin="anonymous"></script>
+    <!--Area CSS esterno-->
+    <link rel="stylesheet" href="css/index/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/index/indexMedia600px.css">
+    <link rel="stylesheet" href="css/index/indexMedia1200px.css">
 </head>
 <body>
 
+
+
+    <!--Header - White section-->
+    <header id="header">
+        <div id="overheader-container">
+            <img src="img/gen/instagram.svg">
+            <img src="img/gen/facebook.svg">
+            <img src="img/gen/google.svg">
+        </div>
+
+
+
+
+
     <!--Header-->
     
-    <header id="header">
 
         <div id="header-container">
+
+            <!--Title Menù-->
             <div id="div-title-logo">
                 <img src="img/gen/logo.jpg" id="logo" alt="logo eu">
                 <h3 id="title">E-Light Universe</h3>
             </div>
 
 
+            <!--Section Menù-->
+            <div id="div-section-menu">
+                <button><a href="index.html">Home</a></button>
+                <button><a href="characters.html">Characters</a></button>
+                <button><a href="story.html">Story</a></button>
+                <button><a href="we.html">We</a></button>
+                <button><a href="">Donation</a></button>
+            </div>
+
+
+            <!--Hamburger Menù-->
             <div id="hamburger-menu">
-                <div id="circle" style="border: inset;">
-                </div>
 
                 <div id="div-lines">
                         <span class="line"></span>
@@ -40,11 +70,12 @@
 
         <!--Header aperto-->
     <div id="header-open" style="display: none">
+
         <div id="button-info">
         <div class="button-panel"><a href="index.html">Home</a></div>
         <div class="button-panel"><a href="characters.html">Characters</a></div>
         <div class="button-panel"><a href="story.html">Story</a></div>
-        <div class="button-panel"><a href="">We</a></div>
+        <div class="button-panel"><a href="we.html">We</a></div>
         <div id="donation" class="button-panel"><a href="">Donation</a></div>
         </div>
 
@@ -54,18 +85,60 @@
 
     </header>
 
+
+    <!--MAIN -->
+
     <main>
     
         <div id="allmain">
 
+            <!------------------------------------------------------------- MAIN 1-------------------------------------------------------------->
+
+<div id="main-container-I" class="hidden">
+
+            <div id="main-writesection-container">
+                
+                
+                <div id="presentation-wrap">
+                             <div class="scroll-text">
+                                <!--Scritte-->
+                                    <h2>Presentazione</h2>
+                                    <p>E-LU è un universo comics dal gradiente filosofico e moderno, con ambientazioni futuristiche e trame di fondo che sondano la natura umana e dell'universo.<br>
+                                    Questo progetto mira a diventare un' "caffè pubblico online", nel quale potersi intrattenere con una bella lettura e delle immagini caratteristiche.
+                                    Ogni #Capitolo ha una sua linea narrativa con possibilità d'intreccio.
+                                    I personaggi, diversi per ogni capitolo, sono adatti a qualsiasi tipo di pubblico e età.
+                                    "Il multiverso è un concetto nato da chi non riesce a vedere l'immensità del nostro".
+                                    Da questo concetto, si struttureranno tutte le regole che governeranno E-LU:</p>
+                                    <li>Nessun ritorno, una sola vita = la stessa condizione umana.</li>
+                                    <li>La fine dell'universo = leggi sull'entropia generale.</li>
+                                    <li>Etica del male e del bene = filosofia dell'etica.</li>
+                                <p>E così vale per ogni legge scientifica che governa la nostra realtà.
+                                    I Supereroi sono nati per dare una linea guida, uno scopo che vada oltre l'individuo e punti alla specie: una religione senza fede.
+                                    In un mondo sempre più caotico, tecnologico e complesso, risulta difficile adeguarsi ai modelli del passato che ci hanno guidati a diventare la generazione che ha cambiato il mondo.<br>
+                                    Oggi, con uno sguardo verso il futuro, proponiamo a voi amanti di fumetti comics un universo del tutto nuovo!</p>
+
+                                    <h3>Sistema Donazioni</h3>
+                                <p>Il sistema delle donazioni serve solo a mantenere il progetto attivo,
+                                    difatti qualsiasi tipo di donazione >5$ contribuisce a farti diventare un utente VIP a vita.
+                                    Su questo modello, ho deciso di regalare a tutti i donatori un #Capitolo speciale chiamato "#0".
+                                    Qui troverete la linea narrativa principale che vi spiegherà come è iniziato il tutto dando anche qualche info sui personaggi principali dei vari Capitoli.</p>
 
 
-            <!--Main 1-->
-            <div id="main-container-I">
+                                    <h3>Crediti: Generale</h3>
+                                <p>Tutti i crediti delle immagini vanno a Midjourney, il quale mi ha permesso di realizzare l'aspetto grafico dei personaggi, della storia, del sito.
+                                    Ringraziamo nello specifico tutti coloro che contribuiscono allo sviluppo tecnologico e scientifico della nostra società mettendo a disposizione gratuitamente corsi, applicazioni, video informativi ecc
+                                    E' anche grazie a tutti loro che è stato possibile oggi creare una realtà come questa.
+                                </p>
+                                
+                            </div>
+            
+                </div>
+                </div>
                 <div id="div-bg1">
                     
+                    <!--Arrows - Slider-->
                     <div id="div-arrows"><div id="arrow-l"></div><div id="arrow-r"></div></div>
-
+                    <!--Imgs - Slider-->
                     <div id="bg-slides">
                         <img src="img/bg/bannerIndex/banner1.png" alt="">
                         <img src="img/bg/bannerIndex/banner2.png" alt="" >
@@ -74,17 +147,17 @@
                     
 
                 </div>
-            </div>
+            
+
+        </div>
+    </div>
+            <!------------------------------------------------------------- MAIN 2-------------------------------------------------------------->
+            <div id="main-container-II" class="hidden">
 
 
-            <!--Main 2-->
-
-
-
-            <div id="main-container-II">
-                
                 <div id="div-tickets">
 
+                    <!-- MAIN 2 - Section left-->
                     <div id="ticket-I">
 
                                 <div id="ticket-I-elements">
@@ -104,6 +177,8 @@
                             
                         </div>
 
+
+                <!-- MAIN 2 - Section Registration-->
                 <div id="ticket-II">
 
                     <div id="div-eyes">                    
@@ -111,30 +186,39 @@
                         <div id="eye-r"></div>
                     </div>
                     <div id="div-II">
-                        <form>
-                        <label title="email">Email</label><input type="email">
-                        <label>Password</label><input type="password">
-                        <input type="submit">
+                        <form action="inserimento_dati.php" method="post" id="form">
+            
+                                <input type="email" placeholder="Inserisci Email">
+                                <input type="password" placeholder="Inserisci Password">
+                                <input type="password" placeholder="Inserisci Password">
+                                <a href="">Password Dimenticata?</a>
+                                <input id="submit" type="submit">
+                                <h4>Hai già un account?<a href="">Signup</a></h4>
+                                <button><img src="img/gen/google.svg"><h2>Signup with Google</h2></button>
+                                <button><img src="img/gen/facebook.svg"><h2>Signup with Meta</h2></button>
+           
                         </form>
                     </div>
                 </div>
 
-                <div id="ticket-III">
-
-                    <div id="div-ticket-III-title">   
-                        <img id="eu-logo" src="img/gen/logo.jpg">         
-                        <h1 id="title-1">E-LIGHT UNIVERSE</h1>
-                    </div>   
-                    <h4 id="text-2">Contattaci e partecipa al progetto se sei un:
-                        <ul>
-                            <li>Grafico</li>
-                            <li>Fumettista</li>
-                            <li>Editore</li>
-                            <li>Programmatore Java</li> 
-                        </ul></h3>
-                    
-                    <a href=""><img id="instagram-logo" src="img/gen/instagram.svg"></a>
+                <!-- MAIN 2 - Section right-->
+                <div id="ticket-I">
+                    <div id="ticket-I-elements">
+                        <h4 id="text-2">Personaggi con abilità sorprendenti: <a href="">"Characters"</a></h3>
+                        <img src="img/bg/bannerIndex/banner5.png">
+                    </div>
+                    <hr>
+                    <div id="ticket-I-elements">
+                        <h4 id="text-2">Tieniti aggiornato sugli ultimi capitoli: <a href="">"Story"</a></h3>
+                        <img src="img/bg/bannerIndex/banner1.png">
+                    </div>
+                    <hr>
+                    <div id="ticket-I-elements">
+                        <h4 id="text-2">Offri un caffè agli autori se ti piace la storia: <a href="">"Donation"</a></h3>
+                        <img src="img/bg/bannerIndex/banner1.png">
+                    </div>
                 
+
                 </div>
 
             </div>
@@ -144,13 +228,20 @@
         </div>
 
 
+            </div>
 
-    </div>
+
+
+            
+
+
+
+                </div>
+
+            <!------------------------------------------------------------- MAIN 3-------------------------------------------------------------->
     </main>
 
-    <aside></aside>
-
-
+    <!--Footer-->
     <footer class="footer">
             <div class="footer-inside">
                 <div class="footer-center">
@@ -201,8 +292,10 @@
 
 
 <!--Script - Funzioni-->
+
 <script src="js/hamburgerReveal.js"></script>
 <script src="js/sliderMenu.js"></script>
+<script src="js/intersectionObserverIndex.js"></script>
 
 </body>
 </html>
