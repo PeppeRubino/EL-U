@@ -92,15 +92,16 @@
     
         <div id="allmain">
 
-            <!------------------------------------------------------------- MAIN 1-------------------------------------------------------------->
+            <!------------------------------------------------------------- MAIN 1 -------------------------------------------------------------->
 
-<div id="main-container-I" class="hidden">
+<div id="main-container-I">
+    <div id="div-main-I">
 
-            <div id="main-writesection-container">
+            <div id="main-writesection-container" class="animation3">
                 
                 
                 <div id="presentation-wrap">
-                             <div class="scroll-text">
+                             <div class="scroll-text" style="animation-play-state: running; animation-direction: normal;">
                                 <!--Scritte-->
                                     <h2>Presentazione</h2>
                                     <p>E-LU è un universo comics dal gradiente filosofico e moderno, con ambientazioni futuristiche e trame di fondo che sondano la natura umana e dell'universo.<br>
@@ -112,7 +113,7 @@
                                     <li>Nessun ritorno, una sola vita = la stessa condizione umana.</li>
                                     <li>La fine dell'universo = leggi sull'entropia generale.</li>
                                     <li>Etica del male e del bene = filosofia dell'etica.</li>
-                                <p>E così vale per ogni legge scientifica che governa la nostra realtà.
+                                    <p>E così vale per ogni legge scientifica che governa la nostra realtà.
                                     I Supereroi sono nati per dare una linea guida, uno scopo che vada oltre l'individuo e punti alla specie: una religione senza fede.
                                     In un mondo sempre più caotico, tecnologico e complesso, risulta difficile adeguarsi ai modelli del passato che ci hanno guidati a diventare la generazione che ha cambiato il mondo.<br>
                                     Oggi, con uno sguardo verso il futuro, proponiamo a voi amanti di fumetti comics un universo del tutto nuovo!</p>
@@ -133,7 +134,8 @@
                             </div>
             
                 </div>
-                </div>
+            </div>
+       
                 <div id="div-bg1">
                     
                     <!--Arrows - Slider-->
@@ -144,33 +146,36 @@
                         <img src="img/bg/bannerIndex/banner2.png" alt="" >
                         <img src="img/bg/bannerIndex/banner3.png" alt="" >
                     </div>
+
+                    <audio></audio>
                     
 
                 </div>
             
 
         </div>
+
     </div>
+
+
             <!------------------------------------------------------------- MAIN 2-------------------------------------------------------------->
-            <div id="main-container-II" class="hidden">
+            <div id="main-container-II">
 
 
-                <div id="div-tickets">
+                <div id="div-main-II">
 
                     <!-- MAIN 2 - Section left-->
-                    <div id="ticket-I">
+                    <div id="ticket-I-lx" class="hidden1">
 
-                                <div id="ticket-I-elements">
+                                <div class="button-info">
                                     <img src="img/bg/bannerIndex/banner5.png">
                                     <h4 id="text-2">Personaggi con abilità sorprendenti: <a href="">"Characters"</a></h3>
                                 </div>
-                                <hr>
-                                <div id="ticket-I-elements">
+                                <div class="button-info">
                                     <img src="img/bg/bannerIndex/banner1.png">
                                     <h4 id="text-2">Tieniti aggiornato sugli ultimi capitoli: <a href="">"Story"</a></h3>
                                 </div>
-                                <hr>
-                                <div id="ticket-I-elements">
+                                <div class="button-info">
                                     <img src="img/bg/bannerIndex/banner1.png">
                                     <h4 id="text-2">Offri un caffè agli autori se ti piace la storia: <a href="">"Donation"</a></h3>
                                 </div>
@@ -179,7 +184,7 @@
 
 
                 <!-- MAIN 2 - Section Registration-->
-                <div id="ticket-II">
+                <div id="ticket-II" class="hidden1">
 
                     <div id="div-eyes">                    
                         <div id="eye-l"></div>
@@ -202,18 +207,16 @@
                 </div>
 
                 <!-- MAIN 2 - Section right-->
-                <div id="ticket-I">
-                    <div id="ticket-I-elements">
+                <div id="ticket-I-rx" class="hidden1">
+                    <div class="button-info">
                         <h4 id="text-2">Personaggi con abilità sorprendenti: <a href="">"Characters"</a></h3>
                         <img src="img/bg/bannerIndex/banner5.png">
                     </div>
-                    <hr>
-                    <div id="ticket-I-elements">
+                    <div class="button-info">
                         <h4 id="text-2">Tieniti aggiornato sugli ultimi capitoli: <a href="">"Story"</a></h3>
                         <img src="img/bg/bannerIndex/banner1.png">
                     </div>
-                    <hr>
-                    <div id="ticket-I-elements">
+                    <div class="button-info">
                         <h4 id="text-2">Offri un caffè agli autori se ti piace la storia: <a href="">"Donation"</a></h3>
                         <img src="img/bg/bannerIndex/banner1.png">
                     </div>
@@ -229,15 +232,6 @@
 
 
             </div>
-
-
-
-            
-
-
-
-                </div>
-
             <!------------------------------------------------------------- MAIN 3-------------------------------------------------------------->
     </main>
 
@@ -251,7 +245,7 @@
                                 <a class="footer_logo" href="#">
                                     <span class="footer_icon">   
                                         <svg id="footerLogoID">
-                                            <image href="img/gen/logo.svg" height="38" width="40" />
+                                            <image href="img/gen/logo.jpg" height="38" width="40" />
                                         </svg>
                                     </span>
                                 </a>
@@ -292,10 +286,10 @@
 
 
 <!--Script - Funzioni-->
-
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="js/hamburgerReveal.js"></script>
 <script src="js/sliderMenu.js"></script>
-<script src="js/intersectionObserverIndex.js"></script>
+<script src="js/index.js"></script>
 
 </body>
 </html>

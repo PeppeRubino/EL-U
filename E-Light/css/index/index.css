@@ -1,4 +1,4 @@
-/* General */
+/************************************************* General ************************************************************************/
 
 body{
     margin: 0%;
@@ -25,20 +25,73 @@ body{
     z-index: 0;
 }
 
-.hidden{
-    background:rgb(81, 255, 0);
-    background-repeat:   no-repeat;
+.hidden1{
     opacity: 0;
-    transform: translateX(-200px);
-    transition: all 2s;
 }
 
-.show{
-    transform: translateY(0px);
-    filter: blur(0px);
+/******************************************* Animation name and classes ********************************************************************/
+
+
+.animation1{
+    animation: scrollInfoRt 3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     display: block;
     opacity: 1;
 }
+
+@keyframes scrollInfoRt{
+    from {
+        transform: translateX(-30vh);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;}
+    }
+
+.animation2{
+        animation: scrollInfoLt 3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+        display: block;
+    }
+
+@keyframes scrollInfoLt{
+        from {
+            transform: translateX(30vh);
+            opacity: 0;
+        }
+        to {
+            opacity: 1;}
+        }
+
+
+
+@keyframes scrolltext{
+            from {top:0;}
+            to {top:-1000vh;}
+        }
+
+
+
+
+
+.animation3{
+    animation: scrollTextContainer 2s linear forwards;
+}
+
+@keyframes scrollTextContainer{
+    from {top:-99vh}
+    to {top: 0vh}
+}
+
+
+ .animation4{
+    animation: regEnter 3s linear forwards;
+ }
+
+ @keyframes regEnter {
+    0%{ opacity: 0;}
+    50%{opacity: 0.3;}
+   100%{opacity: 1;}
+ }
+
 
 
 
@@ -46,26 +99,37 @@ body{
 
 
 #main-container-I{
+    margin-bottom: 3%;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( 77deg, rgba(15, 13, 107, 0.164), rgba(156, 10, 10, 0.192)), url('/E-Light/img/bg/bgIndex/bgMain1-3.png');
+    background-repeat: no-repeat;
+    background-size: 102%;
+    background-position-y: 6vh;
+}
+
+#div-main-I{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 100vh;
 }
 
 #main-writesection-container{
-    background:rgb(255, 255, 255);
+    background:rgba(255, 255, 255, 0.555);
     color: rgb(0, 0, 0);
     display: block;
     overflow: hidden;
-    border-right: #252423 solid 1px;
-    border-left: #252423 solid 1px;
+    position: relative;
+    top: -99vh;
+    box-shadow: 30px 0px 100px rgb(0, 0, 0);
 }
 
 #presentation-wrap{
-    display: block;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    width: 70vh;
+    width: 65vh;
     height: 100vh;
     font-family: 'Syncopate', sans-serif;
     font-size: 3em;
@@ -74,13 +138,6 @@ body{
     margin: 1%;
 }
 
-.scroll-text{
-    text-align: justify;
-    position: relative;
-    width: 60vh;
-    margin-top:70%;
-    animation: scroll-text 70s linear infinite;
-}
 
 .scroll-text h2, .scroll-text h3{
     text-align: center;
@@ -88,9 +145,12 @@ body{
     font-size: 0.5em;
 }
 
-@keyframes scroll-text{
-    from {top:0;}
-    to {top:0;}
+.scroll-text{
+    text-align: justify;
+    position: relative;
+    width: 60vh;
+    margin-top:130%;
+    animation: scrolltext 80s linear infinite;
 }
 
 
@@ -98,6 +158,7 @@ body{
 #div-bg1{
     width: 50vh;
     height: 50vh;
+
    
 }
 
@@ -107,6 +168,8 @@ body{
     width: 50vh;
     height:50vh;
     border-radius: 5%;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.712);
+    
     
 }
 
@@ -185,14 +248,17 @@ body{
 /*************************************************Main II************************************************************************/
 
 #main-container-II{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: block;
     width: 100%;
     height:100vh;
 }
 
-#div-tickets{
+#div-main-II{
+    background-image: linear-gradient( 77deg, rgba(15, 13, 107, 0.164), rgba(156, 10, 10, 0.192)), url('/E-Light/img/bg/bgIndex/bgMain2-1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 0;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -222,24 +288,30 @@ body{
 
 /* 1 ZONE - Main - Ticket I */
 
-#ticket-I{
+#ticket-I-lx{
     width: 30%;
     height:45vh;
-    display: block;
-    animation: fade-in 2s forwards;
-    animation-timing-function: cubic-bezier(0.105, 0.64, 0.44, 1)
+}
+
+#ticket-I-rx{
+    width: 30%;
+    height:45vh;
 }
 
 
-#ticket-I img{
 
+#ticket-I-lx img{
     width: 15vh;
     height: 13.5vh;
-    
-
 }
 
-#ticket-I-elements{
+#ticket-I-rx img{
+    width: 15vh;
+    height: 13.5vh;
+}
+
+
+.button-info{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,19 +323,21 @@ body{
 }
 
 
-#ticket-I-elements:hover{
+
+.button-info:hover{
 background: white;
 color: rgb(0, 0, 0);
+transform: scale(1.1);
 }
 
 
-#ticket-I-elements a{
+.button-info a{
     text-decoration: none;
     color: red;
 
 }
 
-#ticket-I-elements a:hover{
+.button-info a:hover{
     color: white;
     background-color: red;
 }
@@ -279,7 +353,7 @@ color: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.85);
     color: white;
     border-radius: 10%;
-    z-index: 2;
+    z-index: 0;
 }
 
 
@@ -288,8 +362,6 @@ color: rgb(0, 0, 0);
     width: 100%;
     height: 15vh;
     display: flex;
-    margin-top: 0%;
-    margin-left: 0%;
     
 
 }
@@ -385,16 +457,13 @@ form a {
 /* Footer generic */
 
 .footer{
-    position: relative;
+
     display: block;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .footer-inside{
-    position: relative;
-    z-index: 1;
     background-color: #252423;
     padding: 60px 20px 40px;
     color: #8a8887;

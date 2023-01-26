@@ -16,7 +16,6 @@ body {
 
 #header-container {
     background-color: rgba(32, 32, 36, 0.829);
-    position: absolute;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -111,86 +110,162 @@ body {
     opacity: 0.8;
 }
 
-/*foto background top*/
 
- #Main-1-Container{ 
-    background-image: url("/E-Light/img/bg/bgCharacters/bgMain1-1.png");
-    background-size: 100%;
-    display: block;
-    background-repeat: no-repeat;
+
+
+main{
+    display:block;
+}
+
+#main-container-I{
     width: 100%;
-    height: 50%;
-    margin-top: 0.5em;
-    }
+    height: 100vh;
+    background-image: url(/E-Light/img/bg/bgCharacters/bgMain1-1.png);
+    background-size: 100%;
 
-    #div-main-1{
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     width: 100%;
-     height: 40%;
-    }
-    
-    #imagine-png{
-     width: 25%;
-     height: 100%;
-     display: flex;
-     
-    }
-    
-    #imagine-png img:nth-child(1){
-     width: 100%;
-     height: 100%;
-    }
-
-
-
-
-
-/*introduzione*/
-
-#Introduction{
-    border: solid 3px rgb(0, 0, 0);
-    border-radius: 10px;
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    color: white;
-    background-color: rgb(0, 0, 0, 0.6);
-    
 }
 
-/*titolo introduzione*/
-
-#titleIntroduction{
-    background-color: #800000;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 0 rgb(0, 0, 0), -2px 0 rgb(0, 0, 0), 0 2px rgb(0, 0, 0), 0 -2px rgb(0, 0, 0),
-    1px 1px rgb(0, 0, 0), -1px -1px rgb(0, 0, 0), 1px -1px rgb(0, 0, 0), -1px 1px rgb(0, 0, 0);;
-}
-  
-/*gestione totale delle immagini secondarie*/
-
-#photoSecondarie{
-    position: absolute;
+#div-main{
     display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Belt - Sliding */
+
+#belt{
+    width: 10vh;
+    height: 10vh;
+    display: block;
+    animation: scrollimg 30s linear infinite;
+    position: relative;
+    
+
+}
+
+@keyframes scrollimg {
+0%{ bottom: -80vh}
+50%{bottom:60vh}
+100%{bottom:200vh}
+}
+
+#belt img{
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    margin: 0%;
+    z-index: 2;
+}
+
+#name{
+    background: white;
+    margin: 0%;
+    height: 12vh;
+    margin-bottom: 10%;
+    z-index: 1;
+}
+
+#name h3{
+    text-align: center;
+    font-size: small;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2%;
+    font-family: 'Syncopate', sans-serif;
+    color: black;
+    font-weight: 100;
+}
+
+
+
+
+/*Carousel*/
+
+
+.slider{
+ position: relative;
+}
+
+.box{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.637);
+    opacity: 0.7;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.main-box{
+    background-color: white;
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 100px 10px 100px rgba(255, 255, 255, 0.329);
+}
+
+
+.container2{
+    width: 100vh;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-immagine-piccola{
+    width: 250px;
+    height: 250px;
+    border: solid 3px rgb(112, 228, 218);
+    border-radius: 100%;
+    background-image: url(coverCap1-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
     
 }
 
-/*gestione singola delle immagini secondarie*/
+.storia-pg{
+ width: 50%;
+ display: flex;
+    flex-direction: column;
+    text-align: center;
+ 
+ 
+ 
+}
 
-.background2 { 
-    margin: 15px;
-    width: 400px;
-    height: 400px;
-    border: solid 2px rgb(0, 0, 0);
-    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+#titolo-storia{
+color: rgb(112, 228, 218);
+margin: 5px;
+font-size: 2em;
+
 }
-.background2:hover{
-    width: 425px;
-    height: 425px;
-    transition: 1s;
-    cursor: pointer;
+
+#paragrafo{
+color: rgb(112, 228, 218);
+margin: 0px;
+word-break: break-word;
 }
+
+
+
+/*Arrows*/
+#arrows{
+    
+    width: 45vh;
+    height: 5vh;
+    position: absolute;
+    left: 45vh;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    transform: rotate(90deg);
+}
+
+#arrow-right{
+    transform: rotate(180deg);
+    margin-left: 50%;
+}
+
+

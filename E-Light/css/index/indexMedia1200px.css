@@ -14,11 +14,15 @@
         height: 5vh;
     }
 
-    #ticket-I{
+    #ticket-I-lx #ticket-I-rx{
         width: 20%;
     }
 
-    #ticket-I img{
+    #ticket-I-lx img{
+        display: none;
+    }
+
+    #ticket-I-rx img{
         display: none;
     }
 
@@ -34,13 +38,27 @@
     }
 
     #bg-slides{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        width: 50vh;
-        height:50vh;
+        width: 40vh;
+        height:40vh;
         border-radius: 5%;
         
+    }
+
+    #div-arrows{
+        width: 120%;
+    }
+
+    #main-writesection-container{
+        width: 35vh;
+        font-size: 10px;
+    }
+
+    #presentation-wrap{
+        width:35vh;
+    }
+
+    .scroll-text{
+        width: 32vh;
     }
 
 
