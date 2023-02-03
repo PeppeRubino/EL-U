@@ -10,7 +10,7 @@ main{
 #main-container-I{
     width: 100%;
     height: 100vh;
-    background-image: url(./E-Light/img/bg/bgCharacters/bgMain1-1.png);
+    background-image: url(../img/bg/bgCharacters/bgMain1-1.png);
     background-size: 100%;
 
 }
