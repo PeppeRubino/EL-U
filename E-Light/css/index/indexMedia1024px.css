@@ -1,0 +1,42 @@
+@media only screen and (max-width: 1024px){
+
+    /* Main I */
+
+    #main-container-I{
+        /* height: 100vh; */
+        /* background-size: 200%; */
+    }
+
+
+
+    /* Main 2 */
+    #main-container-II{
+        height: 100vh;
+        background-size: 200%;
+    }
+
+    #ticket-II{
+        width: 40vh;
+    
+    }
+
+    #div-section-menu{
+        height: 5vh;
+    }
+
+    #ticket-I-lx #ticket-I-rx{
+        width: 20%;
+    }
+
+    #ticket-I-lx img{
+        display: none;
+    }
+
+    #ticket-I-rx img{
+        display: none;
+    }
+
+
+
+
+}

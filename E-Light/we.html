@@ -4,34 +4,143 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="css/header.css" rel="stylesheet">
+        <link href="css/we/we.css" rel="stylesheet">
+        <link href="css/we/weMedia1400px.css" rel="stylesheet">
+        <link href="css/scrollbar.css" rel="stylesheet">
+
+        <!--Area Font Aggiunti-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Mono&family=Syncopate&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     </head>
     <body>
 
+    <!--Header - White section-->
+    <header id="header">
+        <div id="overheader-container">
+            <img src="img/gen/instagram.svg">
+            <img src="img/gen/facebook.svg">
+            <img src="img/gen/google.svg">
+        </div>
 
+
+
+
+
+    <!--Header-->
+    
+
+        <div id="header-container">
+
+            <!--Title Menù-->
+            <div id="div-title-logo">
+                <img src="img/gen/logo.jpg" id="logo" alt="logo eu">
+                <h3 id="title">E-Light Universe</h3>
+            </div>
+
+
+             <!--Section Menù-->
+             <div id="div-section-menu">
+                <a href="index.html">Home</a>
+                <a href="characters.html">Characters</a>
+                <a href="story.html">Story</a>
+                <a href="we.html">We</a>
+                <a href="">Donation</a>
+            </div>
+
+            <!--Hamburger Menù-->
+            <div id="hamburger-menu">
+
+                <div id="div-lines">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Header aperto-->
+    <div id="header-open" style="display: none">
+
+        <div id="button-info">
+        <div class="button-panel"><a href="index.html">Home</a></div>
+        <div class="button-panel"><a href="characters.html">Characters</a></div>
+        <div class="button-panel"><a href="story.html">Story</a></div>
+        <div class="button-panel"><a href="we.html">We</a></div>
+        <div id="donation" class="button-panel"><a href="">Donation</a></div>
+        </div>
+
+
+    </div>
+
+
+    </header>
 
 
 
 
         
     <main>
-        <div id="ticket-III">
+        <div id="main-container-I">
 
-            <div id="div-ticket-III-title">   
+
+        <div id="ticket-info">
+
+            <div id="div-ticket-title">   
                 <img id="eu-logo" src="img/gen/logo.jpg">         
-                <h1 id="title-1">E-LIGHT UNIVERSE</h1>
-            </div>   
-            <h4 id="text-2">Contattaci e partecipa al progetto se sei un:
+                <h1 id="ticket-title">E-LIGHT UNIVERSE</h1>
+            
+            <h4 id="ticket-text">Contattaci e partecipa al progetto se sei un:
                 <ul>
-                    <li>Grafico</li>
+                    <li>Character Designer</li>
                     <li>Fumettista</li>
                     <li>Editore</li>
-                    <li>Programmatore Java</li> 
+                    <li>Scrittore</li> 
                 </ul></h3>
-            
+            </div>
+               
             <a href=""><img id="instagram-logo" src="img/gen/instagram.svg"></a>
         
         </div>
+
+        <div id="ticket-credit-I">
+            <img src="img/gen/arrow.png"s style="width: 3em; height: 3em;position: absolute; top: 40%">
+            <div id="credit-text">
+            <h5 style="color: red;">Contatti:</h5>
+            <li>Nome: Giuseppe Rubino</li>
+            <li>Linguaggi: HTML, CSS, JS, MySQL</li>
+            <li>Email: Peppe.rubino95@gmail.com</li>
+            <li>Numero: 3801726022</li>
+            <li>Author of "E-Light Universe"</li>
+            </div>
+
+        </div>
+
+
+
+    </div>
     </main>
+
+    <!--Footer-->
+ <footer id="footer">
+    <h2>E-Light Universe credits by Giuseppe Rubino</h2>
+    <hr>
+    
+    <h4>Tutte le immagini presenti sono elaborate con Midjourney (sotto mia descrizione) quindi di pubblico dominio.</h4>
+    <div id="disclaimer">
+    <img src="img/gen/caution.png" style="width: 3em;">
+    <h6>Nessuno guadagna sull'uso di queste immagini.</h5>
+    </div>
+</footer>
+
+<!--Area Script Esterno -->
+<script src="js/hamburgerReveal.js"></script>
+
     </body>
 </html>

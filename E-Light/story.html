@@ -13,10 +13,12 @@
 
     <script src="https://kit.fontawesome.com/1560e31e4a.js" crossorigin="anonymous"></script>
     <!--Area CSS esterno-->
-    <link rel="stylesheet" href="css/story.css">
+    <link rel="stylesheet" href="css/story/story.css">
+    <link rel="stylesheet" href="css/story/storyMedia1400px.css">
+    <link rel="stylesheet" href="css/story/storyMedia1240px.css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/header.css">
- 
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
@@ -46,15 +48,14 @@
             </div>
 
 
-            <!--Section Menù-->
-            <div id="div-section-menu">
-                <button><a href="index.html">Home</a></button>
-                <button><a href="characters.html">Characters</a></button>
-                <button><a href="story.html">Story</a></button>
-                <button><a href="we.html">We</a></button>
-                <button><a href="">Donation</a></button>
+             <!--Section Menù-->
+             <div id="div-section-menu">
+                <a href="index.html">Home</a>
+                <a href="characters.html">Characters</a>
+                <a href="story.html">Story</a>
+                <a href="we.html">We</a>
+                <a href="">Donation</a>
             </div>
-
 
             <!--Hamburger Menù-->
             <div id="hamburger-menu">
@@ -88,165 +89,126 @@
     <main>
         <div id="allmain">
 
-            <!--/* Main Banner */-->
-            <div id="main-banner">
-
-                <div id="banner-I">
-                    <img src="img/bg/bannerStory/banner1.png" id="main-banner-I" class="banner">
-                </div>
-
-                <div id="banner-II">
-                <img src="img/bg/bannerStory/banner2.png" id="main-banner-II" class="banner">
-                </div>
-
-                <!--
-                <div id="banner-III">
-                <img src="img/bg/bgMain1-4.png" id="main-banner-III" class="banner">
-                </div>-->
-
-
-            </div>
-
-
-             <!-- Main - Cap Section -->
-
-
+            <!------------------------------------------------------------------------------- MAIN CONTAINER 1--------------------------------------------------------------------------->
             <div id="main-container-I">
 
-  
+                <!--Arrow-->
+                <img id="arrow" src="img/gen/arrow.png">
 
-                <div class="all-covers">
+                <!--Panel-->
+                <div id="static-panel">
 
-                    <!-- Cover-1 - New Section -->   
-                    <div class="cover-and-button">
+                    <div id="plot-container">
+                        <div class="plot "><h2>Line 1 - #1</h2><h4>Un bambino si trova ibernato in un'astronave lontano dal suo pianeta d'origine. Non ricorda chi è nè come sia finito lì. Ha un solo desiderio, trovare un animale da compagnia. Non è solo però sull'astronave, qui conoscerà un grande futuro compagno.  Durante varie vicende si troverà a fronteggiare un pericolosissimo criminale della sua stazza e la sua piccola banda di scagnozzi</h4></div>
+                        <div class="plot hidden"><h2>Line 2 - #2</h2><h4>In una città futuristica, una ragazza cinese frequenta le superiori di giorno e combatta il giro criminale del padre di notte. Tutto cambia quando un ragazzo americano con i capelli bianchi si trasferisce nella sua scuola e si rivela essere un supereroe con poteri unici. Inizialmente antipatico, il ragazzo si unirà alla protagonista per combattere i crimini della città e aiutarla a sconfiggere il padre criminale. Insieme scopriranno i segreti dietro la loro città e affronteranno nemici potenti per proteggere i cittadini.</h4></div>
+                        <div class="plot hidden"><h2>Line 3 - #3</h2><h4>In una galassia lontana, un imperatore detiene il potere economico con le sue immense sale dorate. Ma un gruppo di rivoluzionari su un pianeta lontano utilizzano il potere della conoscenza e la voglia di ribellarsi per combattere la sua oppressione. Nel frattempo, su un altro pianeta, un essere considerato un Dio da molti guerrieri per la sua forza sovrumana cerca di aumentare il proprio potere e seguire i propri scopi. Tutte queste tre storie si intrecciano intorno al concetto del potere e come esso influenza le azioni e le decisioni dei personaggi.</h4></div>
+                        <div class="plot hidden"><h2>Line 4 - #4</h2><h4>Il protagonista, un giovane uomo intelligente e pieno di idee controcorrente, viene abbandonato dalla società e vive una vita difficile. Quando sua sorella viene rapita da una società segreta religiosa, lui è deciso a scoprire la verità e a salvarla. Tuttavia, nel corso delle sue investigazioni, incontra un personaggio che gli insegna che la violenza e la distruzione non sono la soluzione ai problemi.</h4></div>
+                        <div class="plot hidden"><h2>Line 5 - #5</h2><h4>Dio, sentendosi solo nell'universo, decide di creare due entità separate da sé: il gufo e il corvo. Il gufo rappresenta la necessità del bene superiore e il corvo i frutti del caos. La coscienza di Dio è legata allo sviluppo dell'universo stesso e ogni volta che nasce una creatura cosciente, Dio diventa capace di concepirsi sempre di più. Il gufo e il corvo non possono influenzare gli eventi ma hanno poteri straordinari pari solo a Dio stesso se sommati. Queste creature diventano supereroi che combattono per mantenere l'equilibrio nell'universo e proteggere la vita cosciente. Ma ora la creazione sta morendo e nessun essere nell'universo ha ancora scoperto la cura. I figli di Dio, il gufo e il corvo, devono unire le loro forze per trovare una soluzione e salvare l'universo dalla distruzione. Riusciranno a scoprire la cura in tempo o la creazione è destinata a perire?</h4></div>
+                    </div>
+                
+                
+                <!--Tickets-->
+                <div id="tickets">
+
+                    <!-- Cover-1 -->
+                    <div id="cover-panel" class="cover">
 
                         <h3 id="new">New</h3>
 
-                        <img id="new-content" class="cover" src="img/bg/coverStory/coverCap1-3.png" alt="">
+                        <img src="img/bg/bgStory/coverStory/cover1.png" alt="">
 
-                        <button class="cover-button">
-
-                            <div class="first-line">
+                        <div class="first-line">
                                 <h2>#1</h2>
                                 <h3>A.I.</h3>
-                            </div>
-                            <div class="second-line">
+                        </div>
+                        <div class="second-line">
                                 <h3>Giuseppe Rubino</h3>
-    
-                            </div>
-                        </button>
+                        </div>
+
+                    </div>
+                     <!-- Cover-2--> 
+                     <div id="cover-panel" class="cover">
+
+                        <img src="img/bg/bgStory/coverStory/cover2.png" alt="" alt="">
+
+                        <div class="first-line">
+                                <h2>#2</h2>
+                                <h3>Save me!</h3>
+                        </div>
+                        <div class="second-line">
+                                <h3>Giuseppe Rubino</h3>
+                        </div>
+
+                    </div>
+                     <!-- Cover-3--> 
+                     <div id="cover-panel" class="cover">
+
+                        <img src="img/bg/bgStory/coverStory/cover3.png" alt="">
+
+                        <div class="first-line">
+                                <h2>#3</h2>
+                                <h3>Il Potere</h3>
+                        </div>
+                        <div class="second-line">
+                                <h3>Giuseppe Rubino</h3>
+                        </div>
+
+                    </div>
+                     <!-- Cover-4--> 
+                     <div id="cover-panel" class="cover">
+
+                        <img src="img/bg/bgStory/coverStory/cover4.png" alt="">
+
+                        <div class="first-line">
+                                <h2>#4</h2>
+                                <h3>Nulla</h3>
+                        </div>
+                        <div class="second-line">
+                                <h3>Giuseppe Rubino</h3>
+                        </div>
+
+                    </div>
+                     <!-- Cover-5 --> 
+                     <div id="cover-panel" class="cover">
+
+                        <img src="img/bg/bgStory/coverStory/cover0.png" alt="">
+
+                        <div class="first-line">
+                                <h2>#0</h2>
+                                <h3>L'inizio</h3>
+                        </div>
+                        <div class="second-line">
+                                <h3>Giuseppe Rubino</h3>
+                        </div>
+
                     </div>
 
-
-                        <!-- Cover-2 -->   
-                        <div class="cover-and-button">
-    
-                            <img class="cover" src="img/bg/coverStory/coverCap2-1.png" alt="">
-    
-                            <button class="cover-button">
-    
-                                <div class="first-line">
-                                    <h2>#2</h2>
-                                    <h3>Save me!</h3>
-                                </div>
-                                <div class="second-line">
-                                    <h3>Giuseppe Rubino</h3>
-        
-                                </div>
-                            </button>
-                        </div>
-
-                        <!-- Cover-3 -->   
-                        <div class="cover-and-button">
-    
-                            <img class="cover" src="img/bg/coverStory/coverCap3-2.png" alt="">
-    
-                            <button class="cover-button">
-    
-                                <div class="first-line">
-                                    <h2>#3</h2>
-                                    <h3>Il Potere</h3>
-                                </div>
-                                <div class="second-line">
-                                    <h3>Giuseppe Rubino</h3>
-        
-                                </div>
-                            </button>
-                        </div>
-
-                        <!-- Cover-4 -->   
-                        <div class="cover-and-button">
-    
-                            <img class="cover" src="img/bg/coverStory/coverCap4-2.png" alt="">
-    
-                            <button class="cover-button">
-    
-                                <div class="first-line">
-                                    <h2>#4</h2>
-                                    <h3>Point of break</h3>
-                                </div>
-                                <div class="second-line">
-                                    <h3>Giuseppe Rubino</h3>
-        
-                                </div>
-                            </button>
-                        </div>
-
-                        <!-- Cover-5 -->   
-                        <div class="cover-and-button">
-    
-                            <img class="cover" src="img/bg/coverStory/coverCap5-3.png" alt="">
-    
-                            <button class="cover-button">
-    
-                                <div class="first-line">
-                                    <h3>#5</h3>
-                                    <h3>"...e nel male"</h3>
-                                </div>
-                                <div class="second-line">
-                                    <h3>Giuseppe Rubino</h3>
-        
-                                </div>
-                            </button>
-                        </div>
-
-                        <!-- Cover-6 -->   
-                        <div class="cover-and-button">
-    
-                            <img class="cover" src="img/bg/coverStory/coverCap0-1.png" alt="">
-    
-                            <button class="cover-button">
-    
-                                <div class="first-line">
-                                    <h3>#0</h3>
-                                </div>
-                                <div class="second-line">
-                                    <h3>Giuseppe Rubino</h3>
-        
-                                </div>
-                            </button>
-                        </div>
-
-
-
-
+                </div>
+            </div>
             </div>
 
-
-
         </div>
+
     </main>
 
 
-    <aside>
 
-    </aside>
-
-
-
+ <!--Footer-->
+ <footer id="footer">
+    <h2>E-Light Universe credits by Giuseppe Rubino</h2>
+    <hr>
+    
+    <h4>Tutte le immagini presenti sono elaborate con Midjourney (sotto mia descrizione) quindi di pubblico dominio.</h4>
+    <div id="disclaimer">
+    <img src="img/gen/caution.png" style="width: 3em;">
+    <h6>Nessuno guadagna sull'uso di queste immagini.</h5>
+    </div>
+</footer>
 
 
     <!--Script - Funzioni-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="js/hamburgerReveal.js"></script>
+<script src="js/story.js"></script>
     </body>
 </html>

@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1400px){
+    #main-container-I{
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: center;
+    }
+    #belt{
+        display: none;
+    }
+
+    .box{
+        width: 80vh;
+    }
+    .slider{
+     width: 80vh;
+    }
+    #div-main{
+        width: 100%;
+    }
+
+    .storia-pg{
+        width: 40vh;
+        height: 60%;
+        font-size: 16px;
+
+    }
+}

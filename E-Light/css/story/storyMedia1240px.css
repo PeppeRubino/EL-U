@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1240px){
+    #main-container-I{
+        background-size: 220%;
+        background-position: center;
+    }
+    #static-panel{
+        width: 65vh;
+        height: 50vh;
+
+    }
+    #plot-container{
+        width: 30vh;
+    }
+    #tickets{
+        left: 25vh;
+    }
+    #arrow{
+        left: 15vh;
+    }
+
+}

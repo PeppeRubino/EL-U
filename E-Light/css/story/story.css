@@ -1,0 +1,182 @@
+body{
+    margin: 0 0 ;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Animation */
+
+.hidden{
+    display: none;
+}
+
+.animationCoverR{
+    animation: swiftR 3s linear forwards;
+    transform: translate3d(10vh, 0, 10vh);
+}
+
+@keyframes swiftR{
+    0%{ transform: translate3d(0, 0, 0);z-index: 2;}
+    30%{ transform: translate3d(28vh, 0, 0);z-index: 2;}
+    60%{transform: translate3d(28vh, 0, -20vh);z-index: 0;}
+    100%{transform: translate3d(0, 0, -20vh);z-index: 0;}
+}
+
+
+.animationCoverL{
+    animation: swiftL 3s linear forwards;
+
+}
+
+@keyframes swiftL{
+    0%{ transform: translate3d(0, 0, -40vh);z-index: 0;}
+    25%{transform: translate3d(-80vh, 0, -40vh); }
+    50%{ transform: translate3d(-80vh, 0, 40vh);}
+    75%{transform: translate3d(0, 0, 40vh);}
+    100%{transform: translate3d(0, 0, 40vh); z-index: 2;}
+}
+
+
+.animationOnText{
+    animation: swiftTxt 1s ease-out forwards;
+    display:block;
+}
+
+@keyframes swiftTxt{
+    0%{ opacity: 1;}
+    50%{ opacity: 0.5;}
+    100%{opacity: 0;}
+}
+
+/* All Main */
+#allmain{
+    display: block;
+}
+
+
+/* Main Cap Section */ 
+#main-container-I{
+    
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#arrow{
+
+    z-index: 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 22.5vh;
+    left: 22vh;
+    rotate: -90deg;
+    transform: scale(0.8);
+}
+
+
+#static-panel{
+    position: absolute;
+    width: 80vh;
+    height: 50vh;
+    background: rgba(255, 255, 255, 0.822);
+    box-shadow: 0px 50px 900px rgba(0, 0, 0, 0.788);
+    border-radius: 15%;
+    z-index: 2;
+    perspective: 1000px;
+}
+
+#plot-container{
+    width: 40vh;
+    height: 40vh;
+    position: relative;
+    top: 5%;
+    left: 6%;
+    font-family: 'Syncopate', sans-serif;
+    color: black;
+    font-size: 14px;
+    
+}
+
+.plot{
+    position: absolute;
+    padding: 5%;
+}
+
+#tickets{
+    position: absolute;
+    top: 25vh;
+    left: 40vh;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cover{
+    position: absolute;
+    left: 13vh;
+    z-index: 0;
+}
+
+
+
+
+
+#cover-panel{
+ width: 18vh;
+ height: 33vh;
+ background: rgb(0, 0, 0);
+ border-radius: 10%;
+}
+
+
+
+#cover-panel img{
+    width: 100%;
+
+   }
+
+
+
+#new{
+    position: absolute;
+    width: 18vh;
+    background-color: rgba(255, 255, 0, 0.815);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size:small;
+    font-family: 'Syncopate', sans-serif;
+    margin-top: 0%;
+}
+
+.first-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 3vh;
+    width: 100%;
+    color: white;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.first-line h2{
+    margin-right: 4%;
+}
+
+.second-line {
+    margin-top:20%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    font-family: 'Syncopate', sans-serif;
+    font-size: x-small;
+    margin-bottom: 0%;
+}

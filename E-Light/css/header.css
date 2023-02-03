@@ -21,9 +21,9 @@
     position: fixed;
     display: block;
     width: 100%;
-    height: 9vh;
     background-color: rgba(32, 32, 36);
     z-index: 99;
+    height: 8.5vh;
 }
 
 #header-container {
@@ -31,6 +31,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-top: 0%;
 }
 
 /*Title - Header*/
@@ -55,25 +56,27 @@
     margin-left: 1em;
 }
 
-/* Section button - Header */
+/* Section a - Header */
 
 #div-section-menu{
     margin-right: 5vh;
     display: flex;
     align-items: center;
-    height: 3.9em;
 }
 
 
-#div-section-menu button{
+#div-section-menu a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(32, 32, 36);
     width: 9em;
-    height: 100%;
+    height: 6vh;
     border: none;
     
 }
 
-#div-section-menu button:hover{
+#div-section-menu a:hover{
     background-color: black;
 }
 
@@ -86,6 +89,7 @@
     text-decoration: none;
     font-family: 'Syncopate', sans-serif;
     font-size: normal ;
+    cursor: pointer;
 }
 
 /*Hamburger Menù - Header*/
@@ -132,6 +136,7 @@
     font-family: 'Orbitron', sans-serif;
     text-decoration: none;
     opacity: 1.0;
+    cursor: pointer;
 }
 .button-panel:hover{
     color: white;
@@ -140,4 +145,15 @@
 
 #donation{
     background-color: rgba(255, 217, 0, 0.418);
+}
+
+
+@media only screen and (max-width: 1240px){
+    #div-section-menu{
+        display: none;
+    }
+    #hamburger-menu{
+        display: block;
+    }
+
 }

@@ -27,7 +27,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
-// Jquery/Js - Index - Main I - Pause text on click
+// Js - Index - Main I - Pause text on click
 
 
 const text = document.querySelector("div.scroll-text");
@@ -38,20 +38,6 @@ text.addEventListener('click', function() {                         //Animation:
         text.style.animationPlayState = "paused" }
         else{text.style.animationPlayState = "running"}
    
-})
-
-
-// Js - Index - Main I - back animation on dbl click
-
-document.addEventListener('dblclick', function(){
-    if( text.style.animationPlayState === "paused" && text.style.animationDirection === "normal" ) {
-        text.style.animationDirection ="reverse"}
-})
-
-document.addEventListener('dblclick', function(){
-    if( text.style.animationDirection === "reverse" && text.style.animationPlayState === "running") {
-        text.style.animationDirection ="normal"}
-
 })
 
 
@@ -68,6 +54,7 @@ document.addEventListener('scroll', function(){
 if(window.scrollY > entrance1){ sliderTextContainer.classList.remove("animation3")}
 else { sliderTextContainer.classList.add("animation3")}
 })
+
 
 
 // Jquery/Js - Index - Main II - Ticket Info Animation on scroll
@@ -104,7 +91,7 @@ document.addEventListener('scroll', function() {
 
 
 
-// Js - Index - Main II - bg exit on scroll
+//            Js / Index - Main II - bg exit on scroll/
 
 
 
@@ -120,7 +107,7 @@ document.addEventListener('scroll', function() {
 
     if( window.scrollY > 205.20){bg2.style.height = heightBg}                   // Start of background
     else{bg2.style.height = 0}                                                  // Height start
-    if( window.scrollY > 900.20){ bg2.style.height = "900.20px"}                // End of background
+    if( window.scrollY > 900.20){ bg2.style.height = "100vh"}                // End of background
 
     if(window.scrollY > 700.20){                                                //Animation 4: animation of "registration" zone
         registration.classList.add("animation4")  
@@ -130,3 +117,40 @@ document.addEventListener('scroll', function() {
         registration.classList.add("hidden1")    }
 });
 
+
+
+
+
+
+
+//               Js / Index - Main 1 - Slider of imgs /
+
+var vImg = 3;
+var current = 1;
+
+const arrowL = document.getElementById("arrow-l"),
+      arrowR = document.getElementById("arrow-r");
+
+
+ arrowR.onclick = function slideRight(){
+    current++;
+    if(current > vImg){
+        current = 1;
+    };
+    for(var i= vImg; i>0; i--){
+        document.querySelector("#bg-slides img:nth-child(" + i +")").style.display = "none";
+    }
+    document.querySelector("#bg-slides img:nth-child(" + current +")").style.display = "block";
+ };
+
+
+ arrowL.onclick = function slideLeft(){
+    current--;
+    if(current == 0){
+        current = 3;
+    };
+    for(var i= vImg; i>0; i--){
+        document.querySelector("#bg-slides img:nth-child(" + i +")").style.display = "none";
+    }
+    document.querySelector("#bg-slides img:nth-child(" + current +")").style.display = "block";
+ };

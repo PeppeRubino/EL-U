@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1024px){
+    #main-container-I{
+        background-size: 200%;
+    }
+    #belt{
+        display: none;
+    }
+
+    .box{
+        width: 55vh;
+        height: 30vh;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+
+
+    }
+    .slider{
+        width: 55vh;
+        top: -11vh;
+
+    }
+    
+    .storia-pg{
+        font-size: 12px;
+    }
+
+    .container-immagine-piccola img{
+            width: 10em;
+            height: 10em;
+            top: -5vh;
+            position: relative;
+    }
+    #arrows{
+        width: 41.5%;
+        top: 53vh;
+    }
+}

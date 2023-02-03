@@ -13,9 +13,12 @@
 
     <script src="https://kit.fontawesome.com/1560e31e4a.js" crossorigin="anonymous"></script>
     <!--Area CSS esterno-->
-    <link rel="stylesheet" href="css/characters.css">
+    <link rel="stylesheet" href="css/Characters/characters.css">
+    <link rel="stylesheet" href="css/characters/charactersMedia1400px.css" type="text/css">
+    <link rel="stylesheet" href="css/characters/charactersMedia1024px.css" type="text/css">
     <link rel="stylesheet" href="css/scrollbar.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <!--Area script esterno-->
 </head>
@@ -47,14 +50,14 @@
             </div>
 
 
-            <!--Section Menù-->
-            <div id="div-section-menu">
-                <button><a href="index.html">Home</a></button>
-                <button><a href="characters.html">Characters</a></button>
-                <button><a href="story.html">Story</a></button>
-                <button><a href="we.html">We</a></button>
-                <button><a href="">Donation</a></button>
-            </div>
+                <!--Section Menù-->
+                <div id="div-section-menu">
+                    <a href="index.html">Home</a>
+                    <a href="characters.html">Characters</a>
+                    <a href="story.html">Story</a>
+                    <a href="we.html">We</a>
+                    <a href="">Donation</a>
+                </div>
 
 
             <!--Hamburger Menù-->
@@ -95,60 +98,64 @@
 
                 <div id="belt">
                     <div id="name">
-                        <img src="img/characters/Wally.jpg" id="Wally" class="background2" style="order: 1;">
+                        <img src="img/characters/Wally.png" class="background2" style="order: 1;" onclick="mostraDiv(1)" >
                         <h3>WALLY</h3>
                     </div>
                     <div id="name">
-                        <img src="img/characters/Adam.jpg" id="Adam" class="background2"style="order: 2;">
+                        <img src="img/characters/Adam.jpg" id="Adam" class="background2"style="order: 2;" onclick="mostraDiv(2)">
                         <h3>ADAM</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Uap.jpg" id="Uap" class="background2" style="order: 3;">
+                        <img src="img/Characters/Uap.jpg" id="Uap" class="background2" style="order: 3;" onclick="mostraDiv(3)">
                         <h3>UAP</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Mao.jpg" id="Mao" class="background2" style="order: 4;">
+                        <img src="img/Characters/Mao.jpg" id="Mao" class="background2" style="order: 4;" onclick="mostraDiv(4)">
                         <h3>MAO</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Giorgio.jpg" id="Giorgio" class="background2" style="order: 5;">
+                        <img src="img/Characters/Giorgio.jpg" id="Giorgio" class="background2" style="order: 5;" onclick="mostraDiv(5)">
                         <h3>C. GIORGE</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Dio.jpg" id="Dio" class="background2" style="order: 6;">
-                        <h3>DIO</h3>
-                    </div>
-                    <div id="name">
-                        <img src="img/Characters/E.jpg" id="Creazione" class="background2" style="order: 7;">
-                        <h3>E</h3>
-                    </div>
-                    <div id="name">
-                        <img src="img/Characters/Glu.jpg" id="Glu" class="background2" style="order: 8;">
+                        <img src="img/Characters/Glu.jpg" id="Glu" class="background2" style="order: 8;" onclick="mostraDiv(6)">
                         <h3>GLU</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Crow.jpg" id="Crow" class="background2" style="order: 9;">
-                        <h3>CROW</h3>
-                    </div>
-                    <div id="name">
-                        <img src="img/Characters/Flowgirl.jpg" id="Flowgirl" class="background2" style="order: 10;">
+                        <img src="img/Characters/Flowgirl.png" id="Flowgirl" class="background2" style="order: 10;" onclick="mostraDiv(7)">
                         <h3>FLOWGIRL</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Aurora.jpg" id="Aurora" class="background2" style="order: 11;">
-                        <h3>AURORA</h3>
-                    </div>
-                    <div id="name">
-                        <img src="img/Characters/EGO.jpg" id="Ego" class="background2" style="order: 12;">
-                        <h3>EGO</h3>
-                    </div>
-                    <div id="name">
-                        <img src="img/Characters/Dreamwalker.jpg" id="Dreamwalker" class="background2" style="order: 13;">
+                        <img src="img/Characters/Dreamwalker.png" id="Dreamwalker" class="background2" style="order: 13;" onclick="mostraDiv(8)">
                         <h3>DREAMWA.</h3>
                     </div>
                     <div id="name">
-                        <img src="img/Characters/Elyas.jpg" id="Elyas" class="background2" style="order: 14;">
+                        <img src="img/Characters/Elyas.jpg" id="Elyas" class="background2" style="order: 14;" onclick="mostraDiv(9)">
                         <h3>ELYAS</h3>
+                    </div>
+                    <div id="name">
+                        <img src="img/Characters/Aurora.jpg" id="Aurora" class="background2" style="order: 11;" onclick="mostraDiv(10)">
+                        <h3>AURORA</h3>
+                    </div>
+                    <div id="name">
+                        <img src="img/Characters/Dio.png" id="Dio" class="background2" style="order: 6;" onclick="mostraDiv(11)">
+                        <h3>DIO</h3>
+                    </div>
+                    <div id="name">
+                        <img src="img/Characters/EGO.jpg" id="Ego" class="background2" style="order: 12;"  onclick="mostraDiv(12)">
+                        <h3>EGO</h3>
+                    </div>
+                    <div id="name">
+                        <img src="img/Characters/Crow.png" id="Crow" class="background2" style="order: 9;" onclick="mostraDiv(13)">
+                        <h3>CROW</h3>
+                    </div>
+                    <div id="name">
+                        <img src="img/Characters/E.png" id="E" class="background2" style="order: 14;" onclick="mostraDiv(14)">
+                        <h3>E</h3>
+                    </div>
+                    <div id="name">
+                        <img src="img/Characters/Lux.png" id="Lux" class="background2" style="order: 15;" onclick="mostraDiv(15)">
+                        <h3>Lux</h3>
                     </div>
 
                 </div>
@@ -156,8 +163,8 @@
 
 
                 <div id="arrows">
-                    <img id="arrow-left" src="img/gen/arrow.png">
-                    <img id="arrow-right" src="img/gen/arrow.png">
+                    <img id="arrow-top" src="img/gen/arrow.png">
+                    <img id="arrow-bottom" src="img/gen/arrow.png">
                 </div>
 
 
@@ -166,28 +173,66 @@
 
 
  
-                    <div class="box">
+                    <div class="box" id="div1">
                               <div class="container2">
-                               <div class="container-immagine-piccola"></div>
+                               <div class="container-immagine-piccola"><img src="img/characters/Wally.png" id="Wally"></div>
                                   <div class="storia-pg">
-                                    <h2 id="titolo-storia" >1LA STORIA DI ADAM:</h2>
-                                    <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                       containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                                    </p>
+                                    <h2 id="titolo-storia" >SCHEDA: PROGETTO "BETA WALLY"</h2>
+                                    <div id="paragraph">
+                                            <div class="ability">
+                                            <h4>Ability</h4>
+                                            <li>Alta capacità di elaborazione dati</li>
+                                            <li>Potenziale di sviluppo</li>
+                                            <li>Navigatore Iperluce</li>
+                                            <li>Arma da combattimento</li>
+                                            </div>
+                                    
+                                        <div id="paragraph-r">
+                                            <div class="superpowers">
+                                            <h4>Superpower</h4>
+                                            <li>Null</li>
+                                            <li>Null</li>
+                                            </div>
+                                            <div class="weakness">
+                                            <h4>Weakness</h4>
+                                            <li>Scarso senso del pericolo personale</li>
+                                            <li>Apprensione costante per Adam</li>
+                                            </div>
+                                        </div>
+                                    </div>
                                   </div>
                               </div>
                    </div>
 
 
 
-                <div class="box">
+                <div class="box" id="div2">
                     <div class="container2">
-                     <div class="container-immagine-piccola"></div>
+                     <div class="container-immagine-piccola"><img src="img/characters/Adam.jpg" id="Adam"></div>
                         <div class="storia-pg">
-                          <h2 id="titolo-storia" >2LA STORIA DI ADAM:</h2>
-                          <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                             containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                          </p>
+                          <h2 id="titolo-storia" >SCHEDA: ADAM</h2>
+                          <div id="paragraph">
+                            <div class="ability">
+                            <h4>Ability</h4>
+                            <li>Spirito dell'eroe</li>
+                            <li>Molto curioso</li>
+                            <li>Senza memoria</li>
+                            <li>Grado: Terrestre</li>
+                            </div>
+                    
+                        <div id="paragraph-r">
+                            <div class="superpowers">
+                            <h4>Superpower</h4>
+                            <li>Undefined</li>
+                            <li>Undefined</li>
+                            </div>
+                            <div class="weakness">
+                            <h4>Weakness</h4>
+                            <li>Ha paura di tante cose</li>
+                            <li>Commette spesso disastri</li>
+                            </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                 </div>
@@ -195,94 +240,388 @@
 
 
 
-                    <div class="box">
+                    <div class="box" id="div3">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Uap.jpg" id="Uap"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >3LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA: UAP</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Estremamente simpatico</li>
+                                <li>Può vivere nello spazio vuoto</li>
+                                <li>E' indistruttibile</li>
+                                <li>Grado: </li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Divoratore di Mondi</li>
+                                <li>Sopravvivere</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Estremamente ingenuo</li>
+                                <li>Ha sempre fame</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="box">
+                    <div class="box" id="div4">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Mao.jpg" id="Mao"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >4LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA: MAO</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Perde subito le staffe</li>
+                                <li>Spada laser</li>
+                                <li>Rabbia</li>
+                                <li>Grado: </li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Null</li>
+                                <li>Null</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Forza di combattimento bassissima</li>
+                                <li>Litiga sempre con suo fratello</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="box">
+                    <div class="box" id="div5">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Giorgio.jpg" id="Giorgio"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >5LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA: C. GIORGIO</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Parte della banda di Glu</li>
+                                <li>Autonominatosi Capitano di rotta</li>
+                                <li>Spirito borioso</li>
+                                <li>Grado: </li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Null</li>
+                                <li>Null</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>E' noioso nel parlare</li>
+                                <li>Esprime ogni sua conoscenza</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
 
 
 
-                    <div class="box">
+                    <div class="box" id="div6">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Glu.jpg" id="Glu"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >5LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA: GLU</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Faccia seria</li>
+                                <li>Banda di scagnozzi</li>
+                                <li>Padre criminale</li>
+                                <li>Grado: </li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Null</li>
+                                <li>Null</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Vuole un animale domestico a qualsiasi costo</li>
+                                <li>Non parla</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="box">
+                    <div class="box" id="div7">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Flowgirl.png" id="Flowgirl"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >5LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA FLOWGIRL</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Bellezza</li>
+                                <li>Uso del kung fu</li>
+                                <li>Stratega</li>
+                                <li>Grado: Terrestre</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Può muoversi in aria</li>
+                                <li>Forza prorzionata al chi</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Evasiva</li>
+                                <li>Problemi a relazionarsi</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
 
 
 
-                    <div class="box">
+                    <div class="box" id="div8">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Dreamwalker.png" id="Dreamwalker"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >5LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA: DREAMWALKER</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Finta indifferenza</li>
+                                <li>Ottimo osservatore</li>
+                                <li>Spirito deduttivo</li>
+                                <li>Grado: Terrestre</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Può ricreare ciò che immagina</li>
+                                <li>Può vedere qualche secondo nel futuro</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Scarsa intelligenza emotiva</li>
+                                <li>Orfano da piccolo</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
 
 
-                    <div class="box">
+                    <div class="box" id="div9">
                         <div class="container2">
-                         <div class="container-immagine-piccola"></div>
+                         <div class="container-immagine-piccola"><img src="img/characters/Elyas.jpg" id="Elyas"></div>
                             <div class="storia-pg">
-                              <h2 id="titolo-storia" >5LA STORIA DI ADAM:</h2>
-                              <p id="paragrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maiores unde beatae earum consequLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliuntur eligendi corporis a, ipsa vero aut quaerat! Consectetur minus ab, aliquid numquam animi cupiditate eius necessitatibus!
-                                 containerLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eliLorem ipsum dolor sit amet, consectetur adipisicing eli
-                              </p>
+                              <h2 id="titolo-storia" >SCHEDA: ELYAS</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Alte capacità combattive</li>
+                                <li>Influenza criminale</li>
+                                <li>Alta intelligenza emotiva</li>
+                                <li>Grado: Terrestre</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Fuso con nanorobot</li>
+                                <li>Controllo cosciente dei nanobot</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Criminale</li>
+                                <li>Odia sè stesso</li>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box" id="div10">
+                        <div class="container2">
+                         <div class="container-immagine-piccola"><img src="img/characters/Aurora.jpg" id="Aurora"></div>
+                            <div class="storia-pg">
+                              <h2 id="titolo-storia" >SCHEDA: AURORA</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Sangue Freddo</li>
+                                <li>Astuzia</li>
+                                <li>Strategia</li>
+                                <li>Grado: Figlia della Regina dei ribelli</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Null</li>
+                                <li>Armatura tecnologica</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Mancato senso dell'etica</li>
+                                <li>Crudeltà adattiva</li>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box" id="div11">
+                        <div class="container2">
+                         <div class="container-immagine-piccola"><img src="img/characters/Dio.png" id="Dio"></div>
+                            <div class="storia-pg">
+                              <h2 id="titolo-storia" >SCHEDA: DIO</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Potenza immane distruttiva</li>
+                                <li>Resistenza alle fiamme</li>
+                                <li>Spirito serio</li>
+                                <li>Grado: Creatura Extraterrestre</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Sopravvivere</li>
+                                <li>Forza immane</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Spirito incrollabile e silenzioso</li>
+                                <li>Amante della battaglia</li>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="box" id="div12">
+                        <div class="container2">
+                         <div class="container-immagine-piccola"><img src="img/characters/EGO.jpg" id="Ego"></div>
+                            <div class="storia-pg">
+                              <h2 id="titolo-storia" >SCHEDA: EGO</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Saggezza realistica</li>
+                                <li>Levatura DNA</li>
+                                <li>Immensa ricchezza e potere sociale</li>
+                                <li>Grado: Imperatore</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Doti combattive modificate</li>
+                                <li>Armatura futuristica</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Arroganza</li>
+                                <li>Crudeltà</li>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box" id="div13">
+                        <div class="container2">
+                         <div class="container-immagine-piccola"><img src="img/characters/Crow.png" id="Crow"></div>
+                            <div class="storia-pg">
+                              <h2 id="titolo-storia" >SCHEDA: CROW</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Spirito scientifico</li>
+                                <li>Enorme potere</li>
+                                <li>Passare inosservato</li>
+                                <li>Grado: Forma del Tutto</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Teletrasporto</li>
+                                <li>Potere del Caos</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>Non può intervenire nelle faccende umane</li>
+                                <li>Odia i bambini</li>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="box" id="div14">
+                        <div class="container2">
+                         <div class="container-immagine-piccola"><img src="img/characters/E.png" id="E"></div>
+                            <div class="storia-pg">
+                              <h2 id="titolo-storia" >SCHEDA: E</h2>
+                              <div id="paragraph">
+                                <div class="ability">
+                                <h4>Ability</h4>
+                                <li>Distruggere / Creare</li>
+                                <li>Post-visione</li>
+                                <li>Null</li>
+                                <li>Grado: Tutto</li>
+                                </div>
+                        
+                            <div id="paragraph-r">
+                                <div class="superpowers">
+                                <h4>Superpower</h4>
+                                <li>Creatore</li>
+                                <li>Potere della Creazione</li>
+                                </div>
+                                <div class="weakness">
+                                <h4>Weakness</h4>
+                                <li>E' limitato dalla sua stessa creazione</li>
+                                <li>Ignora ciò che accade nell'universo</li>
+                                </div>
+                            </div>
+                        </div>
                             </div>
                         </div>
                     </div>
@@ -319,58 +658,24 @@
 
     </main>
 
-
-
-
-
-
-
-
+ <!--Footer-->
+ <footer id="footer">
+    <h2>E-Light Universe credits by Giuseppe Rubino</h2>
+    <hr>
     
-  <!--   foto background top
-    <div id="main-1-container"> 
-    
-            <div id="div-main-1">
-                     immagine png che sta sopra al background top
-                     <div id="imagine-png">
-                            <img src="img/characters/fantasma.png" id="png" alt="">
-                     </div>
-                introduzione   
-                <div id="Introduction">
-                    <h1 id="titleIntroduction">Storico Personaggi</h1>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consequuntur illum soluta esse blanditiis ducimus dolor voluptatem ex odit rem quam, ullam maxime consectetur, animi, ea illo tenetur molestias veniam?</h3>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consequuntur illum soluta esse blanditiis ducimus dolor voluptatem ex odit rem quam, ullam maxime consectetur, animi, ea illo tenetur molestias veniam?</h3>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consequuntur illum soluta esse blanditiis ducimus dolor voluptatem ex odit rem quam, ullam maxime consectetur, animi, ea illo tenetur molestias veniam?</h3>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti consequuntur illum soluta esse blanditiis ducimus dolor voluptatem ex odit rem quam, ullam maxime consectetur, animi, ea illo tenetur molestias veniam?</h3>
-                </div>
-          </div>
+    <h4>Tutte le immagini presenti sono elaborate con Midjourney (sotto mia descrizione) quindi di pubblico dominio.</h4>
+    <div id="disclaimer">
+        <img src="img/gen/caution.png" style="width: 3em;">
+        <h6>Nessuno guadagna sull'uso di queste immagini.</h5>
     </div>
-    
-       
-    foto secondarie
-    <div id="photoSecondarie">
-        <img src="img/characters/Wally.jpg" id="Wally" class="background2" style="order: 1;">
-        <img src="img/characters/Adam.jpg" id="Adam" class="background2"style="order: 2;">
-        <img src="img/Characters/Uap.jpg" id="Uap" class="background2" style="order: 3;">
-        <img src="img/Characters/Mao.jpg" id="Mao" class="background2" style="order: 4;">
-        <img src="img/Characters/Giorgio.jpg" id="Giorgio" class="background2" style="order: 5;">
-        <img src="img/Characters/Dio.jpg" id="Dio" class="background2" style="order: 6;">
-        <img src="img/Characters/E.jpg" id="Creazione" class="background2" style="order: 7;">
-        <img src="img/Characters/Glu.jpg" id="Glu" class="background2" style="order: 8;">
-        <img src="img/Characters/Crow.jpg" id="Crow" class="background2" style="order: 9;">
-        <img src="img/Characters/Flowgirl.jpg" id="Flowgirl" class="background2" style="order: 10;">
-        <img src="img/Characters/Aurora.jpg" id="Aurora" class="background2" style="order: 11;">
-        <img src="img/Characters/EGO.jpg" id="Ego" class="background2" style="order: 12;">
-        <img src="img/Characters/Dreamwalker.jpg" id="Dreamwalker" class="background2" style="order: 13;">
-        <img src="img/Characters/Elyas.jpg" id="Elyas" class="background2" style="order: 14;">
-    </div> -->
+</footer>
 
 
 
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="js/hamburgerReveal.js"></script>
-    <script src="js/sliderTicket-Characters.js"></script>
+    <script src="js/characters.js"></script>
 
   
 </body>
